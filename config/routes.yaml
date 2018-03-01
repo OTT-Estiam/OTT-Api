@@ -1,3 +1,20 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+   path: /
+   controller: App\Controller\DefaultController::index
+
+addVod:
+    path: /addvod
+    controller: App\Controller\VodController::addAction
+    methods:    [POST]
+
+addReplay:
+    path: /addreplay
+    controller: App\Controller\VodController::replayAction
+
+addLive:
+    path: /addlive
+    controller: App\Controller\LiveController::liveAction
+
+stopLive:
+    path: /stoplive
+    controller: App\Controller\LiveController::stopAction
